@@ -11,4 +11,189 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  font-family: var(--font-family);
 }
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* #region Task 1 */
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  li {
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 392px;
+    margin: 0 auto;
+  
+    background: #f6f6fe;
+
+    h2 {
+      font-weight: 600;
+    
+      line-height: 1.33333;
+      letter-spacing: 0.04em;
+      color: #2e2f42;
+    }
+
+    ul {
+      display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 8px;
+
+        li {
+          border: 1px solid #808080;
+          border-radius: 4px;
+          width: 360px;
+          height: 40px;
+          padding: 8px 16px;
+
+          font-weight: 400;
+          letter-spacing: 0.04em;
+          color: #2e2f42;
+        }
+    }
+  }
+}
+
+/* #endregion Task 1 */
+
+/* #region Task 2 */
+.gallery {
+  display: flex;
+  gap: 48px 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img {
+    max-width: 360px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+/* #endregion Task 2 */
+
+/* #region Task 3 */
+#name-input {
+  font-family: var(--font-family);
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#name-input::placeholder {
+  font-family: var(--font-family);
+
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#name-input ~ h1 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+/* #endregion Task 3 */
+
+/* #region Task 4 */
+.login-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+
+    input {
+      border: 1px solid #808080;
+      border-radius: 4px;
+      width: 360px;
+      height: 40px;
+    }
+  }
+
+  button {
+    margin-top: 16px;
+    border: 0px;
+    border-radius: 8px;
+    width: 86px;
+    height: 40px;
+
+    background: #4e75ff;
+
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #fff;
+  }
+
+  button:hover {
+    background: #6c8cff;
+  }
+}
+/* #endregion Task 4 */
+
+/* #region Task 5 */
+.widget {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+
+  p {
+    margin: 0;
+
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+  }
+
+  button {
+    border: 0px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 148px;
+    height: 40px;
+
+    background: #4e75ff;
+
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #fff;
+  }
+
+  button:hover {
+    background: #6c8cff;
+  }
+}
+/* #endregion Task 5 */
