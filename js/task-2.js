@@ -27,8 +27,11 @@ const images = [
 
 const gallery = document.querySelector(".gallery");
 
+let galleryTemplate = "";
+
 images.forEach(image => {
   const template = `<li><img src="${image.url}" alt="${image.alt}"/></li>`;
-
-  gallery.insertAdjacentHTML("beforeend", template);
+  galleryTemplate += template + " ";
 })
+
+gallery.insertAdjacentHTML("beforeend", galleryTemplate);

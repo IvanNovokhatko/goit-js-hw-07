@@ -12,7 +12,7 @@ const handleFormSubmit = e => {
 
     return password.value.trim() === "" || email.value.trim() === "" ?
         alert("All form fields must be filled in") :
-        console.log(currentValues),
+        console.log(currentValues) &&
         form.reset();
 };
 
